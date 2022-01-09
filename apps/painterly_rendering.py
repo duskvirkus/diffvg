@@ -81,7 +81,6 @@ def painterly_rendering(
 
     background_image = None
     target_background_image = None
-    print(background_color, type(background_color), len(background_color))
     if len(background_color) == 3:
       background_image = torch.zeros((canvas_height, canvas_width, 3), dtype=torch.float32)
       background_image[:, :, 0] = background_color[0] / 255.0
